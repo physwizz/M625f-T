@@ -311,7 +311,10 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/x86/ -e s/x86_64/x86/ \
 # Default value for CROSS_COMPILE is not to prefix executables
 # Note: Some architectures assign CROSS_COMPILE in their arch/*/Makefile
 ARCH		?= $(SUBARCH)
-CROSS_COMPILE	?= $(srctree)/toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+# CROSS_COMPILE	?= $(srctree)/toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+
+CROSS_COMPILE=/home/physwizz/toolchains/toolchains-for-exynos-850/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+
 
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)
@@ -373,7 +376,12 @@ HOST_LOADLIBES := $(HOST_LFS_LIBS)
 AS		= $(CROSS_COMPILE)as
 LD		= $(CROSS_COMPILE)ld
 LDGOLD		= $(CROSS_COMPILE)ld.gold
-CC              = $(srctree)/toolchain/clang/host/linux-x86/clang-r383902-jopp/bin/clang
+# CC              = $(srctree)/toolchain/clang/host/linux-x86/clang-r383902-jopp/bin/clang
+
+
+CC=/home/physwizz/toolchains/prebuilts_clang_host_linux-x86_clang-r383902-jopp-11/bin/clang
+
+
 CPP		= $(CC) -E
 AR		= $(CROSS_COMPILE)ar
 NM		= $(CROSS_COMPILE)nm
