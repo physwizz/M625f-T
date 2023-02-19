@@ -315,9 +315,8 @@ ARCH		?= $(SUBARCH)
 
 
 
-CROSS_COMPILE=/home/physwizz/toolchains/toolchains-for-exynos-850/aarch64-linux-android-4.9/bin/aarch64-linux-android-
-
-
+# CROSS_COMPILE=/home/physwizz/toolchains/toolchains-for-exynos-850/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+CROSS_COMPILE=~/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 # CROSS_COMPILE=/home/grahame/toolchains/jopp/samsung-exynos9820-toolchain-default/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 
 
