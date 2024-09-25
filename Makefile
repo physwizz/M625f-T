@@ -314,10 +314,8 @@ ARCH		?= $(SUBARCH)
 # CROSS_COMPILE	?= $(srctree)/toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 
 
-
-# CROSS_COMPILE=/home/physwizz/toolchains/toolchains-for-exynos-850/aarch64-linux-android-4.9/bin/aarch64-linux-android-
-CROSS_COMPILE=/home/physwizz/aarch64-linux-android-4.9/bin/aarch64-linux-android-
-# CROSS_COMPILE=/home/grahame/toolchains/jopp/samsung-exynos9820-toolchain-default/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+CROSS_COMPILE=/home/grahame/toolchains/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+# CROSS_COMPILE=/home/grahame/M625f-T/toolchain/samsung-exynos9820-toolchain-default/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 
 
 # Architecture as present in compile.h
@@ -382,8 +380,7 @@ LD		= $(CROSS_COMPILE)ld
 LDGOLD		= $(CROSS_COMPILE)ld.gold
 # CC              = $(srctree)/toolchain/clang/host/linux-x86/clang-r383902-jopp/bin/clang
 
-CC=/home/physwizz/toolchains/prebuilts_clang_host_linux-x86_clang-r383902-jopp-11/bin/clang
-
+CC=/home/grahame/M625f-T/toolchain/prebuilts_clang_host_linux-x86_clang-r383902-jopp-11/bin/clang
 
 
 CPP		= $(CC) -E
