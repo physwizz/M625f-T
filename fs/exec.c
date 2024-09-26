@@ -1731,7 +1731,7 @@ static int do_execveat_common(int fd, struct filename *filename,
    #endif
 
 
-	char *pathbuf = NULL;
+	char *pathbuf;
 	struct linux_binprm *bprm;
 	struct file *file;
 	struct files_struct *displaced;
