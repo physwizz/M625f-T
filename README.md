@@ -15,3 +15,5 @@ virtualenv -p /usr/bin/python2.7 Vpy27
 source Vpy27/bin/activate
 
 ./build_kernel.sh
+
+kernelSU version didn't work on ksu app
